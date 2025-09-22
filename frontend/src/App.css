@@ -63,6 +63,11 @@ button, .card {
   user-select: none;
 }
 
+/* Custom cursor for interactive elements */
+button:hover, .group:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="%23ffffff" stroke="%233b82f6" stroke-width="2" opacity="0.9"/><circle cx="12" cy="12" r="6" fill="%233b82f6" opacity="0.6"/></svg>') 12 12, pointer;
+}
+
 /* Focus styles for accessibility */
 button:focus-visible {
   outline: 2px solid #3b82f6;
