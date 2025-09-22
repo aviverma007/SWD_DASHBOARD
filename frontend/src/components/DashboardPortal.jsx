@@ -47,8 +47,8 @@ const DashboardPortal = () => {
           </div>
           
           <h1 className="text-5xl sm:text-7xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent mb-6">
-            Power BI
-            <span className="block text-4xl sm:text-6xl mt-2">Dashboard Portal</span>
+            DASHBOARD
+            <span className="block text-4xl sm:text-6xl mt-2">PORTAL</span>
           </h1>
           
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
