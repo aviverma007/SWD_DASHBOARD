@@ -145,10 +145,10 @@ const DashboardPortal = () => {
       </div>
       
       {/* Footer */}
-      <div className="border-t border-gray-800/50 bg-gradient-to-r from-gray-900/50 to-black/50 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-6 py-8">
+      <div className="relative border-t border-white/20 bg-black/30 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="text-center">
-            <p className="text-gray-400">
+            <p className="text-gray-200 text-sm">
               Powered by Power BI • Business Intelligence Dashboard Portal
             </p>
           </div>
