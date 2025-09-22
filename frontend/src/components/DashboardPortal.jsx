@@ -30,7 +30,14 @@ const DashboardPortal = () => {
   };
 
   const handleDashboardClick = (url) => {
-    window.open(url, '_blank');
+    console.log('Opening dashboard:', url);
+    try {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    } catch (error) {
+      console.error('Error opening dashboard:', error);
+      // Fallback: try direct navigation
+      window.location.href = url;
+    }
   };
 
   return (
