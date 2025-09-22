@@ -87,7 +87,7 @@ const DashboardPortal = () => {
                   {/* 3D effect overlay */}
                   <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-black/20"></div>
                   
-                  <CardContent className="relative p-8">
+                  <CardContent className="relative p-6 flex flex-col h-full justify-between">
                     {/* Icon */}
                     <div className="flex justify-center mb-6">
                       <div className="relative">
