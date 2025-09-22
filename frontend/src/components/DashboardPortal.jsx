@@ -106,7 +106,7 @@ const DashboardPortal = () => {
                       </h3>
                       
                       {/* Description */}
-                      <p className="text-gray-400 text-center mb-6 leading-relaxed group-hover:text-gray-300 transition-colors duration-300 text-sm flex-grow">
+                      <p className="text-gray-200 text-center mb-6 leading-relaxed group-hover:text-white transition-colors duration-300 text-sm flex-grow">
                         {dashboard.description}
                       </p>
                     </div>
