@@ -93,9 +93,9 @@ const DashboardPortal = () => {
                       {/* Icon */}
                       <div className="flex justify-center mb-4">
                         <div className="relative">
-                          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-500/30 rounded-full blur-lg group-hover:blur-xl transition-all duration-500"></div>
-                          <div className="relative p-3 rounded-full bg-gradient-to-br from-gray-700/80 to-gray-800/80 backdrop-blur-sm border border-gray-600/50 group-hover:border-gray-500/50 transition-all duration-300">
-                            <IconComponent className="h-8 w-8 text-blue-300 group-hover:text-blue-200 transition-colors duration-300" />
+                          <div className="absolute inset-0 bg-gradient-to-br from-blue-400/40 to-purple-400/40 rounded-full blur-lg group-hover:blur-xl transition-all duration-500"></div>
+                          <div className="relative p-3 rounded-full bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm border border-white/30 group-hover:border-white/50 transition-all duration-300">
+                            <IconComponent className="h-8 w-8 text-white group-hover:text-blue-200 transition-colors duration-300" />
                           </div>
                         </div>
                       </div>
