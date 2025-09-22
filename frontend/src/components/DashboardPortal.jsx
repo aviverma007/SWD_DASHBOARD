@@ -88,25 +88,27 @@ const DashboardPortal = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-black/20"></div>
                   
                   <CardContent className="relative p-6 flex flex-col h-full justify-between">
-                    {/* Icon */}
-                    <div className="flex justify-center mb-6">
-                      <div className="relative">
-                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-500/30 rounded-full blur-lg group-hover:blur-xl transition-all duration-500"></div>
-                        <div className="relative p-4 rounded-full bg-gradient-to-br from-gray-700/80 to-gray-800/80 backdrop-blur-sm border border-gray-600/50 group-hover:border-gray-500/50 transition-all duration-300">
-                          <IconComponent className="h-10 w-10 text-blue-300 group-hover:text-blue-200 transition-colors duration-300" />
+                    <div className="flex flex-col items-center text-center flex-grow">
+                      {/* Icon */}
+                      <div className="flex justify-center mb-4">
+                        <div className="relative">
+                          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-500/30 rounded-full blur-lg group-hover:blur-xl transition-all duration-500"></div>
+                          <div className="relative p-3 rounded-full bg-gradient-to-br from-gray-700/80 to-gray-800/80 backdrop-blur-sm border border-gray-600/50 group-hover:border-gray-500/50 transition-all duration-300">
+                            <IconComponent className="h-8 w-8 text-blue-300 group-hover:text-blue-200 transition-colors duration-300" />
+                          </div>
                         </div>
                       </div>
+                      
+                      {/* Title */}
+                      <h3 className="text-lg font-bold text-white text-center mb-3 group-hover:text-blue-100 transition-colors duration-300">
+                        {dashboard.name}
+                      </h3>
+                      
+                      {/* Description */}
+                      <p className="text-gray-400 text-center mb-6 leading-relaxed group-hover:text-gray-300 transition-colors duration-300 text-sm flex-grow">
+                        {dashboard.description}
+                      </p>
                     </div>
-                    
-                    {/* Title */}
-                    <h3 className="text-2xl font-bold text-white text-center mb-3 group-hover:text-blue-100 transition-colors duration-300">
-                      {dashboard.name}
-                    </h3>
-                    
-                    {/* Description */}
-                    <p className="text-gray-400 text-center mb-8 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
-                      {dashboard.description}
-                    </p>
                     
                     {/* CTA Button */}
                     <div className="flex justify-center">
