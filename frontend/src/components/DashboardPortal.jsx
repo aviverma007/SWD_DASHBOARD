@@ -67,7 +67,7 @@ const DashboardPortal = () => {
       </div>
 
       {/* Dashboard Grid */}
-      <div className="px-6 pb-24">
+      <div className="relative px-6 pb-24 flex-1 flex items-center justify-center">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 lg:gap-8">
             {dashboardData.map((dashboard, index) => {
