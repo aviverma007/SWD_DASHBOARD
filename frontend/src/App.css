@@ -107,3 +107,9 @@ button:focus-visible {
 .animate-pulse-glow {
   animation: pulse-glow 3s ease-in-out infinite;
 }
+
+/* Hide emergent badges */
+#emergent-badge,
+a[href*="emergent"] {
+  display: none !important;
+}
