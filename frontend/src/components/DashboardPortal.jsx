@@ -56,7 +56,7 @@ const DashboardPortal = () => {
       {/* Header Section */}
       <div className="relative px-6 py-8">        
         <div className="relative max-w-7xl mx-auto text-center">
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-6 tracking-wider" style={{ fontFamily: 'Orbitron, monospace' }}>
             DASHBOARD PORTAL
           </h1>
           
