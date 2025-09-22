@@ -110,21 +110,26 @@ const DashboardPortal = () => {
                     
                     {/* CTA Button */}
                     <div className="flex justify-center">
-                      <Button
-                        onClick={() => handleDashboardClick(dashboard.url)}
-                        className="relative group/btn bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white border-0 px-8 py-3 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25"
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          console.log('Button clicked for:', dashboard.name);
+                          handleDashboardClick(dashboard.url);
+                        }}
+                        className="relative group/btn bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white border-0 px-6 py-3 text-base font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 cursor-pointer"
                         style={{
                           background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)',
                         }}
                       >
                         <span className="relative z-10 flex items-center gap-2">
                           Open Dashboard
-                          <ExternalLink className="h-5 w-5 group-hover/btn:translate-x-1 transition-transform duration-300" />
+                          <ExternalLink className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
                         </span>
                         
                         {/* Button glow effect */}
                         <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-400 to-purple-400 opacity-0 group-hover/btn:opacity-20 transition-opacity duration-300 blur-sm"></div>
-                      </Button>
+                      </button>
                     </div>
                   </CardContent>
                   
