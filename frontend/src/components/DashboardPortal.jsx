@@ -77,9 +77,9 @@ const DashboardPortal = () => {
               return (
                 <Card 
                   key={index}
-                  className="group relative overflow-hidden bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border-gray-700/50 hover:border-gray-600/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 min-h-[400px] flex flex-col"
+                  className="group relative overflow-hidden bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border-white/20 hover:border-white/40 transition-all duration-500 transform hover:scale-105 hover:-translate-y-4 min-h-[380px] flex flex-col"
                   style={{
-                    boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 40px rgba(59, 130, 246, 0.1)'
+                    boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.6), 0 0 60px rgba(255, 255, 255, 0.1)'
                   }}
                 >
                   {/* Animated background gradient */}
