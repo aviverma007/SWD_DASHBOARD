@@ -41,26 +41,27 @@ const DashboardPortal = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black">
-      {/* Hero Section */}
-      <div className="relative px-6 py-16 sm:py-24">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-purple-900/20 backdrop-blur-3xl"></div>
-        
+    <div className="min-h-screen relative">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('https://customer-assets.emergentagent.com/job_data-dashboard-3d-1/artifacts/pveqax6v_swd.png')`
+        }}
+      ></div>
+      
+      {/* Overlay for better readability */}
+      <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
+      
+      {/* Header Section */}
+      <div className="relative px-6 py-8">        
         <div className="relative max-w-7xl mx-auto text-center">
-          <div className="flex justify-center mb-8">
-            <div className="p-4 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-sm border border-white/10">
-              <Layers3 className="h-16 w-16 text-blue-400" />
-            </div>
-          </div>
-          
-          <h1 className="text-5xl sm:text-7xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent mb-6">
-            DASHBOARD
-            <span className="block text-4xl sm:text-6xl mt-2">PORTAL</span>
+          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            DASHBOARD PORTAL
           </h1>
           
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Access your comprehensive business intelligence dashboards with a single click. 
-            Transform data into actionable insights across all your operations.
+          <p className="text-lg text-gray-200 max-w-2xl mx-auto leading-relaxed">
+            Access your comprehensive business intelligence dashboards with a single click.
           </p>
         </div>
       </div>
