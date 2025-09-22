@@ -120,10 +120,7 @@ const DashboardPortal = () => {
                           console.log('Button clicked for:', dashboard.name);
                           handleDashboardClick(dashboard.url);
                         }}
-                        className="relative group/btn bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white border-0 px-6 py-3 text-base font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 cursor-pointer"
-                        style={{
-                          background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)',
-                        }}
+                        className="relative group/btn bg-gradient-to-r from-white/20 to-white/10 hover:from-white/30 hover:to-white/20 text-white border border-white/30 hover:border-white/50 px-6 py-3 text-base font-semibold rounded-xl transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-white/20 cursor-pointer backdrop-blur-sm"
                       >
                         <span className="relative z-10 flex items-center gap-2">
                           Open Dashboard
@@ -131,7 +128,7 @@ const DashboardPortal = () => {
                         </span>
                         
                         {/* Button glow effect */}
-                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-400 to-purple-400 opacity-0 group-hover/btn:opacity-20 transition-opacity duration-300 blur-sm"></div>
+                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/10 to-white/5 opacity-0 group-hover/btn:opacity-30 transition-opacity duration-300 blur-sm"></div>
                       </button>
                     </div>
                   </CardContent>
