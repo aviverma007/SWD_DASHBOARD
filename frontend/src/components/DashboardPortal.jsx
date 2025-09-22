@@ -82,10 +82,10 @@ const DashboardPortal = () => {
                   }}
                 >
                   {/* Animated background gradient */}
-                  <div className={`absolute inset-0 bg-gradient-to-br ${gradientColor} opacity-0 group-hover:opacity-20 transition-opacity duration-500`}></div>
+                  <div className={`absolute inset-0 bg-gradient-to-br ${gradientColor} opacity-0 group-hover:opacity-20 transition-opacity duration-500 pointer-events-none`}></div>
                   
                   {/* 3D effect overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-black/20"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-black/20 pointer-events-none"></div>
                   
                   <CardContent className="relative p-6 flex flex-col h-full justify-between">
                     <div className="flex flex-col items-center text-center flex-grow">
