@@ -97,16 +97,6 @@ const DashboardPortal = () => {
 
       {/* Main Content */}
       <main style={{ maxWidth: '80rem', margin: '0 auto', padding: '3rem 1.5rem' }}>
-        {/* Title Section */}
-        <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-          <h2 style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '1rem' }}>
-            Available Dashboards
-          </h2>
-          <p style={{ fontSize: '1.125rem', color: '#6b7280', maxWidth: '32rem', margin: '0 auto' }}>
-            Access comprehensive analytics and insights through our professional dashboard suite
-          </p>
-        </div>
-
         {/* Dashboard Cards - Horizontal Layout */}
         <div style={{ 
           backgroundColor: 'white', 
