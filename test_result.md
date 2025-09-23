@@ -167,9 +167,11 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Frontend design conversion to blue/white theme"
-    - "Layout restructuring for official appearance"
-  stuck_tasks: []
+    - "Arrange all buttons in single horizontal line"
+    - "Convert dark theme to blue and white official design"
+  stuck_tasks: 
+    - "Arrange all buttons in single horizontal line"
+    - "Convert dark theme to blue and white official design"
   test_all: false
   test_priority: "high_first"
 
