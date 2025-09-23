@@ -62,24 +62,16 @@ const DashboardPortal = () => {
       }}>
         <div style={{ maxWidth: '80rem', margin: '0 auto', padding: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <div style={{ 
-              width: '3rem', 
-              height: '3rem', 
-              backgroundColor: 'rgba(255, 255, 255, 0.2)', 
-              borderRadius: '0.5rem', 
-              display: 'flex', 
-              alignItems: 'center', 
-              justifyContent: 'center' 
-            }}>
-              <Activity style={{ width: '1.5rem', height: '1.5rem', color: 'white' }} />
-            </div>
-            <div>
-              <h1 style={{ fontSize: '1.875rem', fontWeight: 'bold', color: 'white', margin: 0 }}>
-                DASHBOARD PORTAL
-              </h1>
-              <p style={{ color: '#bfdbfe', margin: '0.25rem 0 0 0', fontSize: '1rem' }}>
-                Your Business Intelligence Hub
-              </p>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_one-page-design/artifacts/v6o163ip_swd.jpg" 
+                alt="SMART WORLD - iLive. iWork. iPlay."
+                style={{ 
+                  height: '60px', 
+                  width: 'auto', 
+                  objectFit: 'contain'
+                }}
+              />
             </div>
           </div>
           <div style={{ 
