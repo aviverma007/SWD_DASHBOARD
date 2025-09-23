@@ -14,35 +14,35 @@ const dashboardData = [
     description: "Track purchase orders, supplier performance, and procurement analytics in real-time.",
     url: "https://app.powerbi.com/reportEmbed?reportId=one-page-design&autoAuth=true&ctid=one-page-design",
     icon: BarChart3,
-    gradient: "from-slate-800 to-slate-900"
+    color: "blue"
   },
   {
     name: "QMS Dashboard",
     description: "Monitor quality management system metrics, compliance, and process improvements.",
     url: "https://app.powerbi.com/reportEmbed?reportId=one-page-design&autoAuth=true&ctid=one-page-design",
     icon: Shield,
-    gradient: "from-emerald-800 to-emerald-900"
+    color: "blue"
   },
   {
     name: "Assets Dashboard",
     description: "Comprehensive asset management, maintenance schedules, and utilization tracking.",
     url: "https://app.powerbi.com/reportEmbed?reportId=one-page-design&autoAuth=true&ctid=one-page-design",
     icon: Building2,
-    gradient: "from-amber-800 to-amber-900"
+    color: "blue"
   },
   {
     name: "Employee Attendance",
     description: "Employee attendance patterns, time tracking, and workforce analytics dashboard.",
     url: "https://app.powerbi.com/reportEmbed?reportId=one-page-design&autoAuth=true&ctid=one-page-design",
     icon: Users,
-    gradient: "from-blue-800 to-blue-900"
+    color: "blue"
   },
   {
     name: "PR-Dashboard",
     description: "Public relations metrics, brand analytics, and communication performance insights.",
     url: "https://app.powerbi.com/reportEmbed?reportId=one-page-design&autoAuth=true&ctid=one-page-design",
     icon: TrendingUp,
-    gradient: "from-violet-800 to-violet-900"
+    color: "blue"
   }
 ];
 
@@ -58,112 +58,132 @@ const DashboardPortal = () => {
   };
 
   return (
-    <div className="dashboard-portal">
-      {/* Background Image */}
-      <div 
-        className="background-image"
-        style={{
-          backgroundImage: `url('https://customer-assets.emergentagent.com/job_data-dashboard-3d-1/artifacts/pveqax6v_swd.png')`
-        }}
-      ></div>
-      
-      {/* Overlay */}
-      <div className="overlay"></div>
-      
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="header">        
-        <div className="container">
-          <h1 className="heading">DASHBOARD PORTAL</h1>
-          <p className="subheading">
-            Access your comprehensive business intelligence dashboards with a single click.
-          </p>
+      <header className="bg-blue-600 shadow-md">
+        <div className="max-w-7xl mx-auto px-6 py-6">
+          <div className="flex items-center justify-between">
+            <div>
+              <h1 className="text-3xl font-bold text-white tracking-wide">
+                DASHBOARD PORTAL
+              </h1>
+              <p className="text-blue-100 mt-2 text-lg">
+                Access your comprehensive business intelligence dashboards
+              </p>
+            </div>
+            <div className="text-white text-right">
+              <div className="text-sm text-blue-100">Powered by</div>
+              <div className="font-semibold">Power BI Analytics</div>
+            </div>
+          </div>
         </div>
-      </div>
+      </header>
 
-      {/* Dashboard Grid */}
-      <div className="dashboard-grid">
-        <div className="container">
-          <div className="grid">
+      {/* Main Content */}
+      <main className="max-w-7xl mx-auto px-6 py-12">
+        {/* Dashboard Buttons Container */}
+        <div className="bg-gray-50 rounded-lg shadow-sm border border-gray-200 p-8">
+          <div className="mb-8 text-center">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-3">
+              Available Dashboards
+            </h2>
+            <p className="text-gray-600">
+              Select any dashboard below to access detailed analytics and reports
+            </p>
+          </div>
+
+          {/* Single Line Button Layout */}
+          <div className="flex flex-wrap justify-center gap-4 lg:gap-6">
             {dashboardData.map((dashboard, index) => {
               const IconComponent = dashboard.icon;
               
               return (
-                <div 
-                  key={index}
-                  className="dashboard-card"
-                >
-                  {/* Animated background gradient */}
-                  <div className={`card-gradient bg-gradient-${dashboard.gradient}`}></div>
-                  
-                  {/* 3D effect overlay */}
-                  <div className="card-overlay"></div>
-                  
-                  <div className="card-content">
-                    <div className="card-body">
-                      {/* Icon */}
-                      <div className="icon-container">
-                        <div className="icon-wrapper">
-                          <div className="icon-glow"></div>
-                          <div className="icon-bg">
-                            <IconComponent className="icon" />
-                          </div>
-                        </div>
+                <div key={index} className="flex-1 min-w-[200px] max-w-[280px]">
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      console.log('Button clicked for:', dashboard.name);
+                      handleDashboardClick(dashboard.url);
+                    }}
+                    className="w-full h-full bg-white border-2 border-blue-200 rounded-lg p-6 
+                             hover:border-blue-500 hover:shadow-lg transition-all duration-300 
+                             focus:outline-none focus:ring-4 focus:ring-blue-100 focus:border-blue-500
+                             group"
+                  >
+                    {/* Icon */}
+                    <div className="flex justify-center mb-4">
+                      <div className="p-3 bg-blue-100 rounded-full group-hover:bg-blue-200 transition-colors">
+                        <IconComponent className="w-8 h-8 text-blue-600" />
                       </div>
-                      
-                      {/* Title */}
-                      <h3 className="card-title">
-                        {dashboard.name}
-                      </h3>
-                      
-                      {/* Description */}
-                      <p className="card-description">
-                        {dashboard.description}
-                      </p>
                     </div>
                     
-                    {/* CTA Button */}
-                    <div className="button-container">
-                      <button
-                        onClick={(e) => {
-                          e.preventDefault();
-                          e.stopPropagation();
-                          console.log('Button clicked for:', dashboard.name);
-                          handleDashboardClick(dashboard.url);
-                        }}
-                        className="dashboard-button"
-                      >
-                        <span className="button-content">
-                          Open Dashboard
-                          <ExternalLink className="button-icon" />
-                        </span>
-                        
-                        {/* Button glow effect */}
-                        <div className="button-glow"></div>
-                      </button>
+                    {/* Title */}
+                    <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
+                      {dashboard.name}
+                    </h3>
+                    
+                    {/* Description */}
+                    <p className="text-sm text-gray-600 mb-4 line-clamp-3 leading-relaxed">
+                      {dashboard.description}
+                    </p>
+                    
+                    {/* CTA */}
+                    <div className="flex items-center justify-center text-blue-600 group-hover:text-blue-700 transition-colors">
+                      <span className="text-sm font-medium mr-2">Open Dashboard</span>
+                      <ExternalLink className="w-4 h-4" />
                     </div>
-                  </div>
-                  
-                  {/* Shine effect */}
-                  <div className="shine-effect">
-                    <div className="shine"></div>
-                  </div>
+                  </button>
                 </div>
               );
             })}
           </div>
         </div>
-      </div>
-      
-      {/* Footer */}
-      <div className="footer">
-        <div className="container">
-          <div className="footer-content">
-            <p className="footer-text">
-              Powered by Power BI • Business Intelligence Dashboard Portal
-            </p>
+
+        {/* Additional Info Section */}
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="text-center p-6 bg-blue-50 rounded-lg border border-blue-100">
+            <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <BarChart3 className="w-6 h-6 text-white" />
+            </div>
+            <h3 className="font-semibold text-gray-800 mb-2">Real-time Analytics</h3>
+            <p className="text-sm text-gray-600">Get instant insights with live data updates</p>
+          </div>
+          
+          <div className="text-center p-6 bg-blue-50 rounded-lg border border-blue-100">
+            <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Shield className="w-6 h-6 text-white" />
+            </div>
+            <h3 className="font-semibold text-gray-800 mb-2">Secure Access</h3>
+            <p className="text-sm text-gray-600">Enterprise-grade security for all your data</p>
+          </div>
+          
+          <div className="text-center p-6 bg-blue-50 rounded-lg border border-blue-100">
+            <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <TrendingUp className="w-6 h-6 text-white" />
+            </div>
+            <h3 className="font-semibold text-gray-800 mb-2">Performance Tracking</h3>
+            <p className="text-sm text-gray-600">Monitor KPIs and business metrics effectively</p>
           </div>
         </div>
-      </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 text-white mt-16">
+        <div className="max-w-7xl mx-auto px-6 py-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-4 md:mb-0">
+              <p className="text-gray-300">
+                © 2024 Dashboard Portal. All rights reserved.
+              </p>
+            </div>
+            <div className="flex items-center space-x-4">
+              <span className="text-gray-400 text-sm">Powered by</span>
+              <span className="text-white font-semibold">Power BI</span>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
