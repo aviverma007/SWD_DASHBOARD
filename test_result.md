@@ -131,15 +131,18 @@ frontend:
 
   - task: "Arrange all buttons in single horizontal line"
     implemented: true
-    working: true
+    working: false
     file: "/app/frontend/src/components/DashboardPortal.js"
-    stuck_count: 0
+    stuck_count: 1
     priority: "high"
     needs_retesting: false
     status_history:
       - working: true
         agent: "main"
         comment: "Redesigned dashboard buttons in responsive horizontal layout with corporate styling"
+      - working: false
+        agent: "testing"
+        comment: "CRITICAL ISSUE: Dashboard buttons are arranged vertically, not horizontally. Button positions: y=223, y=317, y=410, y=504, y=597. The grid layout is showing as vertical stack instead of single horizontal line. All 5 buttons are present and functional, but layout requirement not met."
 
   - task: "Update CSS styling for official theme"
     implemented: true
