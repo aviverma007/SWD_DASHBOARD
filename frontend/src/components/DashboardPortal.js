@@ -27,12 +27,12 @@ const dashboardData = [
     url: "https://app.powerbi.com/reportEmbed?reportId=95bc0742-cbfd-46a6-81da-e05ee4b628e8&autoAuth=true&ctid=711f4066-07b7-45a1-9e32-978e86528cad",
     icon: Building2
   },
-  {
-    name: "Employee Attendance",
-    description: "Employee attendance patterns, time tracking, and workforce analytics dashboard.",
-    url: "https://app.powerbi.com/reportEmbed?reportId=4be8796e-c0a4-4712-879c-9cd9a183e365&autoAuth=true&ctid=711f4066-07b7-45a1-9e32-978e86528cad",
-    icon: Users
-  },
+  // {
+  //   name: "Employee Attendance",
+  //   description: "Employee attendance patterns, time tracking, and workforce analytics dashboard.",
+  //   url: "https://app.powerbi.com/reportEmbed?reportId=4be8796e-c0a4-4712-879c-9cd9a183e365&autoAuth=true&ctid=711f4066-07b7-45a1-9e32-978e86528cad",
+  //   icon: Users
+  // },
   {
     name: "PR-Dashboard",
     description: "Public relations metrics, brand analytics, and communication performance insights.",
